@@ -80,8 +80,11 @@ st.markdown("<hr style='border: 0.5px solid #ddd;'>", unsafe_allow_html=True)
 ### FIRST VISU ####
 
 # Load the data
-data = pd.read_csv(r'/Users/rubenchocron/Documents/Data Science BSC/year3/recent-grads (1).csv')
+#data = pd.read_csv(r'/Users/rubenchocron/Documents/Data Science BSC/year3/recent-grads (1).csv')
+data_url = "https://raw.githubusercontent.com/rubychoc/datavisu/main/recent-grads.csv"
 
+# Load the data directly from the GitHub URL
+data = pd.read_csv(data_url)
 st.markdown("""
     <div style="font-size:30px; font-weight: bold; margin-top: 30px; margin-bottom: 10px;">
     Section 1: Understanding Gender Dynamics Across Academic Majors
@@ -474,8 +477,11 @@ st.markdown("<hr style='border: 0.5px solid #ddd;'>", unsafe_allow_html=True)
 ########## THIRD VISU ##################
 
 
-data = pd.read_csv(r'/Users/rubenchocron/Documents/Data Science BSC/year3/recent-grads (1).csv')
+#data = pd.read_csv(r'/Users/rubenchocron/Documents/Data Science BSC/year3/recent-grads (1).csv')
+data_url = "https://raw.githubusercontent.com/rubychoc/datavisu/main/recent-grads.csv"
 
+# Load the data directly from the GitHub URL
+data = pd.read_csv(data_url)
 st.markdown("""
     <div style="font-size:30px; font-weight: bold; margin-top: 30px; margin-bottom: 10px;">
     Section 3: Understanding Employment Distribution Across Major Categories
